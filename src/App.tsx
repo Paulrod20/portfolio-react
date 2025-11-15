@@ -2,6 +2,9 @@ import './App.css'
 import AboutSection from './components/AboutSection'
 import Navbar from './components/Navbar'
 import Divider from './components/Divider';
+import ProjectsSection from './components/ProjectSection';
+import SkillsSection from './components/SkillsSection';
+import ContactSection from './components/ContactSection';
 
 function App() {
   return (
@@ -9,6 +12,9 @@ function App() {
       <Navbar />
       <AboutSection />
       <Divider />
+      <ProjectsSection />
+      <SkillsSection />
+      <ContactSection />
     </div>
   )
 }
