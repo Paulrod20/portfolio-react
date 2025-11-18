@@ -15,7 +15,7 @@ async function testNavigation() {
             .forBrowser(Browser.CHROME)
             .build();
 
-        await driver.manage().setTimeouts({ implicit: 5000});
+        await driver.manage().setTimeouts({ implicit: 5000 });
         
         //Navigating to website
         await driver.get('http://localhost:5173/')
