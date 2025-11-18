@@ -31,7 +31,7 @@ async function testNavigation() {
         await aboutLink.click();
 
         //Wait for smooth scroll
-        await driver.sleep(1000);
+        await driver.sleep(2000);
 
         //Verify the About Section is visible 
         const aboutSection = await driver.findElement(By.id('about-section'));
