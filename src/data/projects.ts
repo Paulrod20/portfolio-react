@@ -14,7 +14,7 @@ export const projects: Project[] = [
         title: "Portfolio Website",
         description: "A responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth scrolling navigation and animated project cards.",
         technologies: ["Swift", "SwiftUI", "Xcode (Apple's IDE)"],
-        githubUrl: "https://github.com/Paulrod20/The-Mak-App",
+        githubUrl: "https://github.com/Paulrod20/portfolio-react",
         icon: "code"
     },
     {
@@ -22,7 +22,7 @@ export const projects: Project[] = [
         title: "Adopt - Find a Pet",
         description: "Adopt is my biggest project to date. Adopt is a web app designed to make it easier for people to discover and connect with local animal shelters. It aggregates shelter listings into one place, lets users search by location, and presents results in a clean, user-friendly interface.",
         technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Paulrod20/Adopt",
+        githubUrl: "https://github.com/Paulrod20/adopt-react",
         icon: "code"
     },
     {

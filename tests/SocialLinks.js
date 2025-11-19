@@ -1,6 +1,5 @@
 import {Builder, Browser, By} from 'selenium-webdriver';
 import assert from 'assert';
-import test from 'node:test';
 
 /*
     Testing Social Media Links 
