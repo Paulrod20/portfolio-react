@@ -31,9 +31,9 @@ async function testProjectsSection() {
         const pageSource = await driver.getPageSource();
         console.log('DEBUG: Checking if project-card class exists in HTML...');
         if (pageSource.includes('project-card')) {
-        console.log('  ✓ Found "project-card" in page HTML');
+        console.log('  Found "project-card" in page HTML');
         } else {
-        console.log('  ❌ "project-card" NOT found in page HTML!');
+        console.log('  "project-card" NOT found in page HTML!');
         console.log('  Your projects might not be loading!');
         }
 

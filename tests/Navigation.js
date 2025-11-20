@@ -15,6 +15,9 @@ async function testNavigation() {
             .forBrowser(Browser.CHROME)
             .build();
 
+        await driver.manage().window().maximize();
+        await driver.sleep(1000); 
+
         await driver.manage().setTimeouts({ implicit: 5000 });
         
         //Navigating to website
@@ -52,7 +55,7 @@ async function testNavigation() {
         const skillsLink = await driver.findElement(By.linkText('Skills'));
         await skillsLink.click();
 
-        await driver.sleep(1000);
+        await driver.sleep(2000) 
 
         const skillsSection = await driver.findElement(By.id('skills-section'));
         const isSkillsVisible = await skillsSection.isDisplayed();
