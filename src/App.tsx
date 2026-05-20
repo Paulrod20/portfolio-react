@@ -1,11 +1,11 @@
 import './App.css'
-import AboutSection from './components/AboutSection'
 import Navbar from './components/Navbar'
-import Divider from './components/Divider';
-import HeroSection from './components/HeroSection';
-import ProjectsSection from './components/ProjectSection';
-import SkillsSection from './components/SkillsSection';
-import ContactSection from './components/ContactSection';
+import HeroSection from './components/HeroSection'
+import AboutSection from './components/AboutSection'
+import ProjectsSection from './components/ProjectSection'
+import SkillsSection from './components/SkillsSection'
+import ContactSection from './components/ContactSection'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,10 +13,10 @@ function App() {
       <Navbar />
       <HeroSection />
       <AboutSection />
-      <Divider />
       <ProjectsSection />
       <SkillsSection />
       <ContactSection />
+      <Footer />
     </div>
   )
 }
