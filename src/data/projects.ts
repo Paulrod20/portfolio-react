@@ -13,7 +13,7 @@ export const projects: Project[] = [
     title: "FlipCheck",
     description: "A used video game and console price comparison tool built for resellers and collectors. Pulls real market data to help users make smarter buying and selling decisions.",
     technologies: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS"],
-    githubUrl: "https://github.com/Paulrod20/flipcheck",
+    githubUrl: "https://github.com/Paulrod20/flip-check-react",
     category: "web"
   },
   {
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     title: "Mr. Wooga",
     description: "An iOS chat app powered by the Anthropic API. Built with SwiftUI as a portfolio and practice project exploring AI-driven conversational interfaces on Apple platforms.",
     technologies: ["Swift", "SwiftUI", "Anthropic API", "Xcode"],
-    githubUrl: "https://github.com/Paulrod20/mr-wooga",
+    githubUrl: "https://github.com/Paulrod20/mr.wooga",
     category: "mobile"
   },
   {
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     title: "PredatorHelper",
     description: "An open-source Windows utility and alternative to PredatorSense for Acer Helios laptops. Features performance mode switching, fan speed monitoring, battery management, and a dark UI.",
     technologies: ["C#", "WinForms", "WMI"],
-    githubUrl: "https://github.com/Paulrod20/PredatorHelper",
+    githubUrl: "https://github.com/Paulrod20/p-helper",
     category: "desktop"
   },
 ];

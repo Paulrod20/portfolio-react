@@ -1,17 +1,19 @@
 import { projects } from '../data/projects';
 import ProjectCard from './ProjectCard';
 
-function ProjectsSection() {
-    return (
-        <section id="projects-section" className="projects-section">
-            <h2>My Projects</h2>
-            <div className="projects-container">
-                {projects.map((project) => (
-                    <ProjectCard key={project.id} project={project} />
-                ))}
-            </div>
-        </section>
-    );
+function ProjectSection() {
+  return (
+    <section id="projects-section" className="projects">
+      <div className="projects-content">
+        <h2 className="section-heading">Projects</h2>
+        <div className="projects-grid">
+          {projects.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default ProjectsSection;
+export default ProjectSection;
