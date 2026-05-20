@@ -1,59 +1,59 @@
-
 export interface Project {
-    id: number;
-    title: string;
-    description: string;
-    technologies: string[];
-    githubUrl: string;
-    icon: string; // 'code' or 'mobile
+  id: number;
+  title: string;
+  description: string;
+  technologies: string[];
+  githubUrl: string;
+  category: 'web' | 'mobile' | 'game' | 'desktop';
 }
 
 export const projects: Project[] = [
-    {
-        id: 1,
-        title: "Portfolio Website",
-        description: "A responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth scrolling navigation and animated project cards.",
-        technologies: ["Swift", "SwiftUI", "Xcode (Apple's IDE)"],
-        githubUrl: "https://github.com/Paulrod20/portfolio-react",
-        icon: "code"
-    },
-    {
-        id: 2,
-        title: "Adopt - Find a Pet",
-        description: "Adopt is my biggest project to date. Adopt is a web app designed to make it easier for people to discover and connect with local animal shelters. It aggregates shelter listings into one place, lets users search by location, and presents results in a clean, user-friendly interface.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Paulrod20/adopt-react",
-        icon: "code"
-    },
-    {
-        id: 3,
-        title: "Focus Flow - Todo List",
-        description: "Focus Flow is a productivity app that helps users plan and complete tasks in structured, distraction-free sessions. It combines simple to-do management with a timer-based 'flow' system so you can stay focused, track progress, and build consistent work habits.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Paulrod20/focus-flow",
-        icon : "code"
-    },
-    {
-        id: 4,
-        title: "Smart Watch Landing Page",
-        description: "Watch Landing Page is a sleek, responsive landing page designed to showcase a watch brand or product. It highlights features and pricing in a modern, minimal layout with clear calls-to-action, optimized for both desktop and mobile visitors.",
-        technologies: ["HTML", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/Paulrod20/smart-watch-page",
-        icon : "code"
-    },
-    {
-        id: 5,
-        title: "The Mak App",
-        description: "The Mak App is an iOS application I built to practice Swift and Apple's latest SwiftUI framework. It features a gallery of my wife's photos where each image acts as a button; tapping a photo reveals a personal description of that memory.",
-        technologies: ["Swift", "SwiftUI", "Xcode (Apple's IDE)"],
-        githubUrl: "https://github.com/Paulrod20/The-Mak-App",
-        icon: "mobile"
-    },
-    {
-        id: 6,
-        title: "Image Editor",
-        description: "Image Editor Script is a Python tool that applies custom edits to images directly through code. Users can adjust effects, transformations, and enhancements programmatically, making it easy to automate and experiment with image processing.",
-        technologies: ["Python"],
-        githubUrl: "https://github.com/Paulrod20/ImageEditor",
-        icon: "code"}   
+  {
+    id: 1,
+    title: "FlipCheck",
+    description: "A used video game and console price comparison tool built for resellers and collectors. Pulls real market data to help users make smarter buying and selling decisions.",
+    technologies: ["React", "TypeScript", "Vite", "Supabase", "Tailwind CSS"],
+    githubUrl: "https://github.com/Paulrod20/flipcheck",
+    category: "web"
+  },
+  {
+    id: 2,
+    title: "Adopt — Web",
+    description: "A web app that helps people discover and connect with local animal shelters. Aggregates shelter listings into one place with map-based search and a clean, approachable interface.",
+    technologies: ["React", "TypeScript", "Leaflet", "Vite"],
+    githubUrl: "https://github.com/Paulrod20/adopt-react",
+    category: "web"
+  },
+  {
+    id: 3,
+    title: "Adopt — React Native",
+    description: "The mobile counterpart to Adopt. A React Native app for finding local shelters on the go, featuring MapKit integration, a shelter list bottom sheet, and tab navigation.",
+    technologies: ["React Native", "TypeScript", "MapKit", "Expo"],
+    githubUrl: "https://github.com/Paulrod20/adopt-ios",
+    category: "mobile"
+  },
+  {
+    id: 4,
+    title: "Project Noise",
+    description: "An indie game built in Godot exploring four emotional worlds — Anger, Depression, Anxiety, and Shame. A deeply personal project with original artwork created in collaboration with my wife.",
+    technologies: ["Godot", "GDScript"],
+    githubUrl: "https://github.com/Paulrod20/project-noise",
+    category: "game"
+  },
+  {
+    id: 5,
+    title: "Mr. Wooga",
+    description: "An iOS chat app powered by the Anthropic API. Built with SwiftUI as a portfolio and practice project exploring AI-driven conversational interfaces on Apple platforms.",
+    technologies: ["Swift", "SwiftUI", "Anthropic API", "Xcode"],
+    githubUrl: "https://github.com/Paulrod20/mr-wooga",
+    category: "mobile"
+  },
+  {
+    id: 6,
+    title: "PredatorHelper",
+    description: "An open-source Windows utility and alternative to PredatorSense for Acer Helios laptops. Features performance mode switching, fan speed monitoring, battery management, and a dark UI.",
+    technologies: ["C#", "WinForms", "WMI"],
+    githubUrl: "https://github.com/Paulrod20/PredatorHelper",
+    category: "desktop"
+  },
 ];

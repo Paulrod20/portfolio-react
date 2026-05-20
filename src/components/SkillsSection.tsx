@@ -1,50 +1,38 @@
-
 function SkillsSection() {
-    const technicalSkills = [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Python",
-        "Swift",
-        "SwiftUI",
-        "Xcode",
-        "C#",
-        "Godot Game Engine"
-    ];
+  const languages = [
+    "TypeScript", "JavaScript", "Swift", "HTML", "CSS", "C#", "Selenium", "React", "SwiftUI",
+  ];
 
-    const otherSkills = [
-        "5+ years of Customer Service",
-        "Building/Repairing PCs",
-        "Active Directory",
-        "Windows OS",
-        "Linux (Fedora, Arch)",
-        "Adobe Illustrator",
-        "Adobe Premiere Pro"
-    ];
+  const tools = [
+    "Vite", "Supabase", "Git","Xcode", "Godot", 
+    "Adobe Illustrator", "Adobe Premiere Pro",
+  ];
 
-    return (
-        <section id="skills-section" className="skills-section"> 
-            <h2>My Skills</h2>
-            <p className="skills-intro">
-                 The skills below are the ones I am proficient in. I continue to learn and improve my skills every day!
-            </p>
-            <ul>
-                {technicalSkills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                ))}
-            </ul>
-
-            <p className="skills-intro">
-                Skills I am also proficient in that are unrelated to software development:
-            </p>
-            <ul>
-                {otherSkills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                ))}
-            </ul>
-        </section>
-    );
-
+  return (
+    <section id="skills-section" className="skills">
+      <div className="skills-content">
+        <h2 className="section-heading">Skills</h2>
+        <div className="skills-groups">
+          <div className="skills-group">
+            <h3 className="skills-group-label">Languages & Frameworks</h3>
+            <div className="skills-tags">
+              {languages.map((skill) => (
+                <span key={skill} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+          <div className="skills-group">
+            <h3 className="skills-group-label">Tools & Other</h3>
+            <div className="skills-tags">
+              {tools.map((skill) => (
+                <span key={skill} className="skill-tag">{skill}</span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default SkillsSection;
