@@ -8,7 +8,6 @@ const categoryLabel: Record<Project['category'], string> = {
   web: 'Web',
   mobile: 'Mobile',
   game: 'Game',
-  desktop: 'Desktop',
 };
 
 function ProjectCard({ project }: ProjectCardProps) {
